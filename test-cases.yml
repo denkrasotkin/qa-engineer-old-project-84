@@ -1,0 +1,95 @@
+---
+  summary: |
+    Ввод названия товара в поисковое окно.
+  requirement: |
+    Поиск товаров по ключевому слову.
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english # Тест-кейс "Перевод страницы на другой язык"
+   Язык ввода - english 
+  steps: 
+  - ввод в поисковое окно "Samsung"
+  - ввод в поисковое окно "gulab"
+  - ввод в поисковое окно "19"
+  - ввод в поисковое окно "key"
+  expected-result: |
+    Отображены товары, содержащие в названии "Sumsung","gulab","19","key".
+    
+---
+  summary: |
+    Выбор категории товара.
+  requirement: |
+    Поиск товаров по категории.
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english # Тест-кейс "Перевод страницы на другой язык"
+   Язык ввода - english 
+  steps: 
+  - нажать на выпадающую кнопку "Category"
+  - нажать на кнопку "laptops"
+  - нажать на кнопку "home-decoration"
+  - нажать на кнопку "skincare" 
+  expected-result: |
+   Отображены товары соответствующих категорий.
+   
+---
+  summary: |
+    Смена языка интерфейса.
+  requirement: |
+    Перевод страницы на другой язык.
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - Нажать на выподающую кнопку "Language"
+  - Нажать на "Russian" из выпадающего списка 
+  expected-result: |
+   Отображен корректный перевод на русский язык интерфейса страницы.
+   
+---
+  summary: |
+    Добавление товаров в корзину
+  requirement: |
+    
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - 
+  expected-result: |
+   
+
+---
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - 
+  expected-result: |
+   ---
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - 
+  expected-result: |
+   
+   
+   
+   
+   
+   
