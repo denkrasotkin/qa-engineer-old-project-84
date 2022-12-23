@@ -135,16 +135,24 @@
   
   ---
   summary: |
-    
+    Нагрузочное тестирование
   requirement: |
-    
+    Работа сайта при большой объеме трафика
   prerequisites: |
-    Открыт сайт https://hexlet-products-store.vercel.app/
+    Приложение "Apache JMeter 5.5"
+    https://jmeter.apache.org/ #описание работы программы
   test-data: |  
-   Язык страницы - english
+   Фаил "PlanHexlet.jmx"
   steps: 
-  - 
-  expected-result: |   ---
+  - Открыть приложение "JMeter", запустив файл "Jmeter.bin"
+  - Открыть тест план "PlanHexlet.jmx"
+  - Запустить тест
+  - Открыть раздел "Graph Results"
+  expected-result: |   
+  Значения количества запросов в минуту соответствуют заявленным. Минимальное количество ошибок.
+  
+  
+  ---
   summary: |
     
   requirement: |
