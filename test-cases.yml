@@ -53,6 +53,40 @@
   summary: |
     Добавление товаров в корзину
   requirement: |
+    Отображение товаров к корзине
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - Найти на странице товары "iPhone 9"
+  - Нажать на кнопку "Add to cart"
+  - Нажать на кнопку "Cart"
+  - Повторить для товаров "MacBook Pro","perfume Oil","Daal Masoor 500 grams","Key Holder".
+  expected-result: |
+   Все товары добавлены в корзину и отображены на странице корзины
+
+---
+  summary: |
+    Просмотр информации о товаре
+  requirement: |
+    Отображение информации о товарах
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - Найти на странице товары "iPhone 9"
+  - Нажать на карточку товара
+  - Повторить для товаров "MacBook Pro","perfume Oil","Daal Masoor 500 grams","Key Holder".
+  expected-result: |
+  Отображена подробная информация о товарах : описание, цена, скидка, количество, рейтинг, фотографии
+  
+  
+     ---
+  summary: |
+    
+  requirement: |
     
   prerequisites: |
     Открыт сайт https://hexlet-products-store.vercel.app/
@@ -60,10 +94,62 @@
    Язык страницы - english
   steps: 
   - 
-  expected-result: |
-   
-
----
+  expected-result: |   ---
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - 
+  expected-result: |   ---
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - 
+  expected-result: |   ---
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - 
+  expected-result: |   ---
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - 
+  expected-result: |   ---
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - 
+  expected-result: |   ---
   summary: |
     
   requirement: |
@@ -75,6 +161,12 @@
   steps: 
   - 
   expected-result: |
+  
+  
+  
+  
+  
+  
    ---
   summary: |
     
