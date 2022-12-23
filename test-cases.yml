@@ -119,6 +119,43 @@
   expected-result: |
    Все товары добавлены в корзину и отображены на странице корзины
 
+
+---
+  summary: |
+   Удаление товаров из корзины
+  requirement: |
+    Очистить корзину
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - Найти на странице товары "iPhone 9"
+  - Нажать на кнопку "Add to cart"
+  - Нажать на кнопку "Cart"
+  - Повторить для товаров "MacBook Pro","perfume Oil","Daal Masoor 500 grams","Key Holder".
+  - Нажать кнопку "Clear cart"
+  expected-result: |
+   Все товары удалены из корзины.
+   
+   ---
+  summary: |
+   Удаление товара из корзины
+  requirement: |
+    Очистить корзину
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - english
+  steps: 
+  - Найти на странице товары "iPhone 9"
+  - Нажать на кнопку "Add to cart"
+  - Нажать на кнопку "Cart"
+  - Повторить для товаров "MacBook Pro","perfume Oil","Daal Masoor 500 grams","Key Holder".
+  - Нажать кнопку "Delete" у товара "iPhone 9"
+  expected-result: |
+   Товар "iPhone 9" удален из корзины.
+
 ---
   summary: |
     Просмотр информации о товаре
@@ -233,11 +270,8 @@
   steps: 
   - Пройти тест-кейсы : 
     Ввод названия товара в поисковое окно.
-    Выбор категории товара.
-    Смена языка интерфейса.
     Добавление товаров в корзину
-    Мобильная версия сайта
-    Нагрузочное тестирование
+    Удаление товара из корзины
     Покупка товара
     Конфигурационное тестирование
   expected-result: |   
