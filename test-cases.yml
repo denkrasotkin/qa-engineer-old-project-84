@@ -168,65 +168,26 @@
   - Нажать кнопку "Checkout"
   expected-result: |   
   Отображено сообщение об успешном оформлении заказа
-  
-  
-  
-  
-  ---
+ 
+ ---
   summary: |
-    
+   Тестирование при другом языке интерфейса
   requirement: |
-    
+    Работа сайта на русском языке интерфейса
   prerequisites: |
     Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |  
-   Язык страницы - english
+   Язык страницы - русский
   steps: 
-  - 
-  expected-result: |   ---
-  summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    Открыт сайт https://hexlet-products-store.vercel.app/
-  test-data: |  
-   Язык страницы - english
-  steps: 
-  - 
-  expected-result: |   ---
-  summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    Открыт сайт https://hexlet-products-store.vercel.app/
-  test-data: |  
-   Язык страницы - english
-  steps: 
-  - 
-  expected-result: |
-  
-  
-  
-  
-  
-  
-   ---
-  summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    Открыт сайт https://hexlet-products-store.vercel.app/
-  test-data: |  
-   Язык страницы - english
-  steps: 
-  - 
-  expected-result: |
-   
-   
-   
-   
-   
-   
+  - Пройти тест-кейсы : 
+    Ввод названия товара в поисковое окно.
+    Выбор категории товара.
+    Смена языка интерфейса.
+    Добавление товаров в корзину
+    Мобильная версия сайта
+    Нагрузочное тестирование
+    Покупка товара
+    Конфигурационное тестирование
+  expected-result: |   
+  Результаты аналогичные при прохождении тест-кейсов
+ 
