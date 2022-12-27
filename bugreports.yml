@@ -2,22 +2,174 @@
 - summary: |
     Не работает поиск по описанию товара
   environment: |
-    Google Chrome	Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
     ОС Windows 11 Домашняя 22621.963
   steps-to-reproduce: |
     1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Нажать на поиск "Search"
+    2. Нажать на кнопку ввода текста "Search"
     3. Ввести "apple"
   expected-result: |
-    На странице будет отображены результаты поиска по описанию товара
+    На странице будет отображены результаты поиска по описанию товара по слову "apple"
   actual-result: |
     На странице отображено сообщение об ошибке "Nothing found!"
     Ошибка изображена на скриншоте search.jpg
     
+    
 - summary: |
-    
+    Не работает поиск товара на русском языке.
   environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Нажать на кнопку "Language"
+    3. Выбрать "Russian"
+    4. Нажать на кнопку ввода текста "Поиск"
+    5. Ввести "Телефон"  
+  expected-result: |
+    На странице отобразятся результаты поиска по категории или описанию товара со словом "Телефон".
+  actual-result: |
+    На странице отображено сообщение об ошибке "Ничего не найдено!"
+    Ошибка изображена на скриншоте russian.jpg
+    Ошибка отображаеься при вводе любого слова на русском языке "Смартфон", "Компьютер", "Ноутбук", "Самсунг" и т.д.
     
+- summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. 
+  expected-result: |
+    
+  actual-result: |
+    
+    Ошибка изображена на скриншоте 
+    - summary: |
+    Не работает поиск товара на русском языке.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
   steps-to-reproduce: |
     1. 
   expected-result: |
