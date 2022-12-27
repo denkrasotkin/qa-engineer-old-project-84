@@ -6,7 +6,7 @@
   prerequisites: |
     Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |  
-   Язык страницы - english # Тест-кейс "Перевод страницы на другой язык"
+   Язык страницы - english
    Язык ввода - english 
   steps: 
   - ввод в поисковое окно "Samsung"
@@ -43,7 +43,7 @@
   prerequisites: |
     Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |  
-   Язык страницы - english # Тест-кейс "Перевод страницы на другой язык"
+   Язык страницы - english 
    Язык ввода - english 
   steps: 
   - ввод в поисковое окно "Apple"
@@ -77,7 +77,7 @@
   prerequisites: |
     Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |  
-   Язык страницы - english # Тест-кейс "Перевод страницы на другой язык"
+   Язык страницы - english 
    Язык ввода - english 
   steps: 
   - нажать на выпадающую кнопку "Category"
