@@ -3,77 +3,75 @@
     Ввод названия товара в поисковое окно (English).
   status: pass
 
----
 - summary: |
    Ввод неправильного названия товара в поисковое окно
   status: pass
   
-  ---
 - summary: |
     Ввод слова из описания товара в поисковое окно.
   status: fail
   
-  ---
+
 - summary: |
     Ввод названия товара в поисковое окно (Русский).
   status: fail
   
-  ---
+
 - summary: |
    Выбор категории товара.
   status: pass
   
-  ---
+
 - summary: |
      Смена языка интерфейса.
   status: fail
   
-  ---
+
 - summary: |
     Добавление товаров в корзину
   status: pass
   
-  ---
+
 - summary: |
    Удаление товаров из корзины
   status: pass
   
-  ---
+
 - summary: |
     Удаление товара из корзины
   status: pass
   
-  ---
+
 - summary: |
      Мобильная версия сайта
   status: pass
   
-    ---
+
 - summary: |
     Просмотр информации о товаре
   status: pass
   
-    ---
+
 - summary: |
     Конфигурационное тестирование
   status: pass
   
-    ---
+
 - summary: |
     Нагрузочное тестирование
   status: pass
   
-    ---
+
 - summary: |
     Покупка товара
   status: pass
   
-   ---
+
 - summary: |
     Тестирование при другом языке интерфейса
   status: pass
   
-     ---
+  
 - summary: |
     Тестирование фильтра цены товара
   status: pass
