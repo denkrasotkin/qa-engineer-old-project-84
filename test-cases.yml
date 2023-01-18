@@ -293,7 +293,19 @@
   expected-result: |   
     Результаты аналогичные при прохождении тест-кейсов
  
-
+- summary: |
+   Открытие страницы категории товаров со страницы товара
+  requirement: |
+    Возможность перехода на страницу конкретной категории товара с хэштегом #
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   Язык страницы - русский
+  steps: 
+   - Найти и нажать на иконку товара "Iphone 9"
+   - Нажать на хэштег #smartphones
+  expected-result: |   
+    Отображена страница с каталогом товаров категории "smartphones"
 
  # Negative tests
 - summary: |
