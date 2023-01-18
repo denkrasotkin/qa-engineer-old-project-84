@@ -2,69 +2,148 @@
 test-cases:
 - summary: |
     Ввод названия товара в поисковое окно (English).
-  status: pass
+  status: pass  (был pass)
 
-- summary: |
-   Ввод неправильного названия товара в поисковое окно
-  status: fail
-  
+ 
 - summary: |
     Ввод слова из описания товара в поисковое окно.
-  status: fail
+  status: fail  (был fail)
   
+
 - summary: |
     Ввод названия товара в поисковое окно (Русский).
-  status: fail
+  status: fail  (был fail)
   
+
 - summary: |
    Выбор категории товара.
-  status: fail
+  status: fail  (был pass)
   
+
 - summary: |
      Смена языка интерфейса.
-  status: fail
+  status: fail  (был fail)
   
-- summary: |
-    Добавление товаров в корзину
-  status: pass
-  
-- summary: |
-   Удаление товаров из корзины
-  status: pass
-  
-- summary: |
-    Удаление товара из корзины
-  status: pass
-  
-- summary: |
-     Мобильная версия сайта
-  status: pass
-  
-- summary: |
-    Просмотр информации о товаре
-  status: pass
-  
-- summary: |
-    Конфигурационное тестирование
-  status: pass
-  
-- summary: |
-    Нагрузочное тестирование
-  status: pass
   
 - summary: |
     Покупка товара
-  status: pass
+  status: pass  (был pass)
   
+
 - summary: |
-    Тестирование при другом языке интерфейса
-  status: pass
+   Удаление товаров из корзины
+  status: pass  (был pass)
+  
+
+- summary: |
+    Удаление товара из корзины
+  status: pass  (был pass)
+  
+
+- summary: |
+    Просмотр информации о товаре
+  status: pass  (был pass)
+  
   
 - summary: |
     Тестирование фильтра цены товара
-  status: fail
+  status: fail  (был fail)
   
-bugreports:
+  
+- summary: |
+    Фильтрация товара по наличию
+  status: fail  (был pass) 
+  
+  
+- summary: |
+    Навигация по страницам каталога
+  status: pass  (был pass)
+  
+  
+- summary: |
+    Просмотр изображений товара
+  status: pass  (был fail)
+  
+
+- summary: |
+     Мобильная версия сайта
+  status: pass  (был pass)
+  
+  
+- summary: |
+    Конфигурационное тестирование
+  status: pass  (был pass)
+  
+  
+- summary: |
+    Нагрузочное тестирование
+  status: pass  (был pass)
+  
+  
+- summary: |
+    Тестирование при другом языке интерфейса
+  status: pass  (был pass)
+  
+  
+- summary: |
+    Открытие страницы категории товаров со страницы товара
+  status: pass  (был fail)
+  
+  
+- summary: |
+   Ввод неправильного названия товара в поисковое окно
+  status: fail  (был pass)
+  
+- summary: |
+    Тестирование фильтра с отрицательной ценой товара
+  status: fail  (был pass)
+  
+bugreports:  
+- summary: |
+    Некорректно работает выбор категории товара.
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Нажать на выпадающую кнопку "Category"
+    3. Нажать на кнопку "laptops"
+  expected-result: |
+    На странице будут отображены товары соответствующих категорий.
+  actual-result: |
+    Пропадают кнопки перехода между страницами.
+    Ошибка изображена на скриншоте category.jpg
+
+- summary: |
+   Нет фильтрации по наличию
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: | 
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Нажать кнопку "In stock" (снятие галочки)
+  expected-result: |   
+    Отображение товаров, находящихся не в наличии
+  actual-result: |
+    Отображены все товары на странице
+    
+- summary: |
+    Тестирование фильтра цены товара
+  environment: |
+    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
+    ОС Windows 11 Домашняя 22621.963
+  steps-to-reproduce: |
+    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Найти товар "Iphone 9" цена 549$ без скидки,  477,85$ со скидкой
+    3. Поставить значение "100" в графу "Price, From"
+    4. Поставить значение "500" в графу "Price, To"
+  expected-result: |
+    На странице отображены товары, соответствующие границам выбранных цен
+  actual-result: |
+    На странице не отображен товар "iPhone 9"
+    Пропадают кнопки перехода между страницами.
+    Ошибка изображена на скриншоте price.jpg
+    
 - summary: |
     Ввод неправильного названия товара в поисковое окно
   environment: |
@@ -81,84 +160,17 @@ bugreports:
     Ошибка изображена на скриншоте search2.jpg
     
 - summary: |
-    Не работает поиск по описанию товара
+   Негативный тест с отрицательным значением цены товара
   environment: |
     Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
     ОС Windows 11 Домашняя 22621.963
-  steps-to-reproduce: |
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  steps-to-reproduce: | 
     1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. Нажать на кнопку ввода текста "Search"
-    3. Ввести "apple"
-  expected-result: |
-    На странице будет отображены результаты поиска по описанию товара по слову "apple"
+    2. Поставить значение "0" в графу "Price, From"
+    3. Поставить значение "-100" в графу "Price, To"
+  expected-result: |   
+    Отображение ошибки "Ничего не найдено"
   actual-result: |
     На странице отображены все товары
-    Ошибка изображена на скриншоте search1.jpg
-    
-    
-- summary: |
-    Не работает поиск товара на русском языке.
-  environment: |
-    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
-    ОС Windows 11 Домашняя 22621.963
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. Нажать на кнопку "Language"
-    3. Выбрать "Russian"
-    4. Нажать на кнопку ввода текста "Поиск"
-    5. Ввести "Телефон"  
-  expected-result: |
-    На странице отобразятся результаты поиска по категории или описанию товара со словом "Телефон".
-  actual-result: |
-    На странице отображены все товары
-    Ошибка изображена на скриншоте russian1.jpg
-    Ошибка отображается при вводе любого слова на русском языке "Смартфон", "Компьютер", "Ноутбук", "Самсунг" и т.д.
-    
-- summary: |
-    Некорректно работает выбор категории товара.
-  environment: |
-    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
-    ОС Windows 11 Домашняя 22621.963
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. Нажать на выпадающую кнопку "Category"
-    3. Нажать на кнопку "laptops"
-  expected-result: |
-    На странице будут отображены товары соответствующих категорий.
-  actual-result: |
-    На странице будут отображены товары соответствующих категорий.
-    Пропадают кнопки перехода между страницами.
-    Ошибка изображена на скриншоте category.jpg
-    
-    
-- summary: |
-    Не полная смена языка интерфейса.
-  environment: |
-    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
-    ОС Windows 11 Домашняя 22621.963
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. Нажать на кнопку "Language"
-    3. Выбрать "Russian"
-  expected-result: |
-    Перевод страницы на русский язык
-    Перевод описания товаров, перевод категорий
-  actual-result: |
-    Перевод только кнопок и информационных надписей.
-    Ошибка изображена на скриншоте translate1.jpg
-    
-- summary: |
-    Тестирование фильтра цены товара
-  environment: |
-    Google Chrome Версия 108.0.5359.125 (Официальная сборка), (64 бит)
-    ОС Windows 11 Домашняя 22621.963
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. Поставить значение "100" в графу "Price, From"
-    3. Поставить значение "500" в графу "Price, To"
-  expected-result: |
-    На странице отображены товары, соответствующие границам выбранных цен
-  actual-result: |
-    На странице отображены все товары
-    Пропадают кнопки перехода между страницами.
-    Ошибка изображена на скриншоте price.jpg
