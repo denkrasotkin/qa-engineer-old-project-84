@@ -2,101 +2,101 @@
 test-cases:
 - summary: |
     Ввод названия товара в поисковое окно (English).
-  status: pass  (был pass)
+  status: pass  #(был pass)
 
  
 - summary: |
     Ввод слова из описания товара в поисковое окно.
-  status: fail  (был fail)
+  status: fail  #(был fail)
   
 
 - summary: |
     Ввод названия товара в поисковое окно (Русский).
-  status: fail  (был fail)
+  status: fail  #(был fail)
   
 
 - summary: |
    Выбор категории товара.
-  status: fail  (был pass)
+  status: fail  #(был pass)
   
 
 - summary: |
      Смена языка интерфейса.
-  status: fail  (был fail)
+  status: fail  #(был fail)
   
   
 - summary: |
     Покупка товара
-  status: pass  (был pass)
+  status: pass  #(был pass)
   
 
 - summary: |
    Удаление товаров из корзины
-  status: pass  (был pass)
+  status: pass  #(был pass)
   
 
 - summary: |
     Удаление товара из корзины
-  status: pass  (был pass)
+  status: pass  #(был pass)
   
 
 - summary: |
     Просмотр информации о товаре
-  status: pass  (был pass)
+  status: pass  #(был pass)
   
   
 - summary: |
     Тестирование фильтра цены товара
-  status: fail  (был fail)
+  status: fail  #(был fail)
   
   
 - summary: |
     Фильтрация товара по наличию
-  status: fail  (был pass) 
+  status: fail  #(был pass) 
   
   
 - summary: |
     Навигация по страницам каталога
-  status: pass  (был pass)
+  status: pass  #(был pass)
   
   
 - summary: |
     Просмотр изображений товара
-  status: pass  (был fail)
+  status: pass  #(был fail)
   
 
 - summary: |
      Мобильная версия сайта
-  status: pass  (был pass)
+  status: pass  #(был pass)
   
   
 - summary: |
     Конфигурационное тестирование
-  status: pass  (был pass)
+  status: pass  #(был pass)
   
   
 - summary: |
     Нагрузочное тестирование
-  status: pass  (был pass)
+  status: pass  #(был pass)
   
   
 - summary: |
     Тестирование при другом языке интерфейса
-  status: pass  (был pass)
+  status: pass  #(был pass)
   
   
 - summary: |
     Открытие страницы категории товаров со страницы товара
-  status: pass  (был fail)
+  status: pass  #(был fail)
   
   
 - summary: |
    Ввод неправильного названия товара в поисковое окно
-  status: fail  (был pass)
+  status: fail  #(был pass)
   
 - summary: |
     Тестирование фильтра с отрицательной ценой товара
-  status: fail  (был pass)
+  status: fail  #(был pass)
   
 bugreports:  
 - summary: |
@@ -174,3 +174,7 @@ bugreports:
     Отображение ошибки "Ничего не найдено"
   actual-result: |
     На странице отображены все товары
+    
+    
+   #Замечания и комментари по проекту после исправлений описаны в файле Comments fix.txt
+    
